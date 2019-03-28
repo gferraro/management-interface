@@ -4,6 +4,21 @@ This is a small web server which supports for management and
 configuration of Cacophononator devices from the [The Cacophony
 Project](https://cacophony.org.nz).
 
+## Building
+
+Building will install packr for you. Make sure $GOPATH/bin is in your $PATH. 
+To build the management server for ARM (to run on a Raspberry Pi):
+```
+make
+```
+
+To build the management server to run on your development machine:
+```
+make build
+```
+
+For either case the resulting executable is `managementd`.
+
 ## Installing packr
 
 This project uses the [packr](https://github.com/gobuffalo/packr) tool
@@ -20,20 +35,6 @@ Make sure $GOPATH/bin is in your $PATH.
 Alternatively download a stable [prebuilt
 release](https://github.com/gobuffalo/packr/releases) of the packr
 tool and install it into a directory in your $PATH.
-
-## Building
-
-To build the management server for ARM (to run on a Raspberry Pi):
-```
-make
-```
-
-To build the management server to run on your development machine:
-```
-make build
-```
-
-For either case the resulting executable is `managementd`.
 
 ## Running on a Cacophonator
 
